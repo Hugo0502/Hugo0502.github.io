@@ -9,7 +9,7 @@
   margin: 50px auto;
 }
 
-#p1 {
+p {
   display: block;
   width: 400px;
   margin: 50px auto;
@@ -20,12 +20,14 @@
 
 }
 
-p{
+p.titel{
   display: block;
-  width: 400px;
+  widows: 400px;
   margin: 50px auto;
   font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+
 }
+
 
 body{
   background-color: lightblue ;
