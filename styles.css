@@ -24,16 +24,7 @@ body{
   display: block;
   width:150px;
   margin: 50px auto;
-}
+  box-shadow: 0,03cm;
+  border-radius: 1px;
 
-#instagram{
-  display: block;
-  width:150px;
-  margin: 50px auto;
-}
-
-#twitter{
-  display: block;
-  width:150px;
-  margin: 50px auto;
 }
