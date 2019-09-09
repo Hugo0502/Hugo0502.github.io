@@ -24,7 +24,7 @@ p.titel{
   display: block;
   widows: 400px;
   margin: 50px auto;
-  font: 20px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  font: 15px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
   border-bottom: 2px solid #545454;
 
 }
