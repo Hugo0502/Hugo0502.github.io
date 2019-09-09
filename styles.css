@@ -45,14 +45,43 @@ body{
 }
 
 ul{
-  margin-top: 50px;
+  margin-left: 150px;
+  margin-top: 10px;
   font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-  text-align: center;
+
 }
 
-li{
+ul li{
   display: inline;
-  margin: 50px;
-}
+ 
+  
 
+}
+div {background-color: rgb(22, 84, 126);}
+div a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  display:inline-block;
+}
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li {display: inline-block;}
+ul li:hover {background: rgb(22, 84, 126);}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+ul li ul li { 
+  background: rgb(22, 84, 126); 
+  display: block; 
+}
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background: rgb(22, 84, 126);}
 
