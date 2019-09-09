@@ -21,7 +21,8 @@ body{
 }
 
 #instagram{
+  display: block;
   width: 120px ;
-  margin-left: 325px;
+  margin: 50px auto;
 
 }
