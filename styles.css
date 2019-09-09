@@ -23,11 +23,11 @@ body{
 #instagram{
   display: block;
   width:150px;
-  margin: right;
+  margin: 50px auto;
 }
 
 #twitter{
   display: block;
   width:150px;
-  margin: left;
+  margin: 50px auto;
 }
