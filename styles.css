@@ -20,6 +20,12 @@ body{
   background-color: lightblue ;
 }
 
+#one{
+  display: block;
+  width:150px;
+  margin: 50px auto;
+}
+
 #instagram{
   display: block;
   width:150px;
