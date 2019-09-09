@@ -20,7 +20,7 @@ p {
 
 }
 
-p.titel{
+p.title{
   display: block;
   widows: 400px;
   margin: 50px auto;
@@ -43,3 +43,16 @@ body{
   margin: 50px auto;
 
 }
+
+ul{
+  margin-top: 50px;
+  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  text-align: center;
+}
+
+li{
+  display: inline;
+  margin: 50px;
+}
+
+
