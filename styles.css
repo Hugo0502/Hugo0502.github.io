@@ -20,10 +20,8 @@ body{
   background-color: lightblue ;
 }
 
-img.instagram{
+#instagram{
   display: block;
   width: 120px;
-  margin-left: 50px auto;
-
 
 }
