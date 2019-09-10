@@ -3,6 +3,12 @@
   padding:0px;
 }
 
+#pic{
+  height:200px;
+  width: 100%;
+  overflow: auto;
+}
+
 #octocat {
   display: block;
   width:384px;
@@ -60,7 +66,6 @@ body{
 
 
 #topmenu{
-  margin-top: 15px;
   font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
 }
 
@@ -87,21 +92,28 @@ body{
 }
 
 #topmenu {
-  display: inline;
-  margin: 0;
-  padding: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: block;
+  background-color: rgb(22, 84, 126);
 }
 #topmenu li {display: inline-block;}
 #topmenu li:hover {background: #124669;}
-#topmenu li:hover ul {display: block;}
-#topmenu li ul {
-  position: absolute;
-  width: 245px;
-  display: none;
+#topmenu li:hover > ul > li {
+  transform: translateY(0);
 }
-#submenu li { 
+#topmenu li ul {
+  overflow: hidden;
+  position: absolute;
+  min-width: 245px;
+}
+#submenu > li { 
   background: #124669; 
   display: block;
+  transform: translateY(-300%);
+  transition: 1s ease;
 }
 
 
@@ -130,8 +142,8 @@ body{
 }
 /* Button onClick */
 .dropbtn:active{
-  box-shadow:  0 3px 5px 0 rgba(0,0,0,0.24), 0 7px 18px 0 rgba(0,0,0,0.19);
-  transform: translateY(3px);
+  box-shadow:  0 3px 4px 0 rgba(0,0,0,0.24), 0 6px 14px 0 rgba(0,0,0,0.19);
+  transform: translateY(2px);
 }
 
 

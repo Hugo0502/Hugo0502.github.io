@@ -14,7 +14,7 @@
         <li>
           <a href="#">Links to other Websides</a>
           <ul id="submenu">
-            <li><a href="https://www.google.com/" target="_blank">Goolge</a></li>
+            <li><a href="https://www.google.com/" target="_blank">Google</a></li>
             <li><a href="https://wikipedia.de" target="_blank">Wikipedia</a></li>
             <li><a href="https://www.apple.com" target="_blank">Apple</a></li>
           </ul>
@@ -29,7 +29,6 @@
         </li>
       </ul>
     </div>
-
 
 
 <img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
@@ -58,17 +57,18 @@
     document.getElementById("myDropdown").classList.toggle("show");
   }
   
+  HTMLCollection.prototype.filter = Array.prototype.filter;
+
   // Close the dropdown if the user clicks outside of it
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
+      const dropdown = document.getElementsByClassName("dropdown-content");
+      const isShown = (dropdown) => dropdown.classList.contains('show');
+      dropdowns
+      .filter(isShown)
+      .forEach((dropdown) => {
+        dropdown.classList.remove('show');
+      });
     }
   }
   </script>
