@@ -7,8 +7,10 @@
   display: block;
   width:384px;
   margin: 50px auto;
+  
 }
 
+/* Hello world Text */
 #p1 {
   display: block;
   width: 500px;
@@ -20,6 +22,7 @@
 
 }
 
+/* Title above soz.Med. Acc. */
 #title{
   display: block;
   width: 500px;
@@ -35,6 +38,7 @@ body{
   background-color: lightblue ;
 }
 
+/* Insta Pic */
 #one{
   display: inline-block ;
   width: 15%;
@@ -44,6 +48,7 @@ body{
   
 }
 
+/* Twitter Pic */
 #two{
   display: inline-block ;
   width: 15%;
@@ -100,20 +105,13 @@ body{
 #submenu li:hover {background: rgb(22, 84, 126);}
 
 
-
-
-
-
-
-
-
-
 /* Dropdown Button */
 .dropbtn {
   background-color: #3498DB;
   color: white;
   padding: 10px;
   font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
   border: none;
   cursor: pointer;
   margin-left: 30.4%;
@@ -121,14 +119,15 @@ body{
   margin-bottom:  15px;
 
 }
+/* Button hover */
 .dropbtn:hover{
   box-shadow: 0 8px 11px 0 rgba(0,0,0,0.24), 0 15px 35px 0 rgba(0,0,0,0.19);
   
 }
-
+/* Button onClick */
 .dropbtn:active{
   box-shadow:  0 3px 5px 0 rgba(0,0,0,0.24), 0 7px 18px 0 rgba(0,0,0,0.19);
-  transform: translateY(4px);
+  transform: translateY(3px);
 }
 
 
@@ -141,6 +140,7 @@ body{
   max-width: 500px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  
 }
 
 /* Text inside the dropdown */
@@ -150,14 +150,14 @@ body{
   text-decoration: none;
   display: block;
   font-family: 'Courier New', Courier, monospace;
+
 }
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+/* Show the dropdown menu (use JS) */
 .show {
   display:block;
   margin-left: 30%;
   border-radius: 3px;
   border: 1px solid #000000;
   
-
 }
