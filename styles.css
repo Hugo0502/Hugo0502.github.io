@@ -7,14 +7,14 @@
   display: block;
   width:384px;
   margin: 50px auto;
-  
+
 }
 
 /* Hello world Text */
 #p1 {
   display: block;
   width: 500px;
-  margin: 10px auto;
+  margin: 7px auto;
   font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
   border: 2px solid #545454;
   border-radius: 5px;
@@ -78,6 +78,7 @@ body{
   font-size: 25px;
   padding: 25px;
   display:inline-block;
+  
 }
 
 #menu a:hover{
@@ -114,7 +115,7 @@ body{
   font-family: 'Courier New', Courier, monospace;
   border: none;
   cursor: pointer;
-  margin-left: 30.4%;
+  margin-left: 30.3%;
   border-radius: 3px;
   margin-bottom:  15px;
 
@@ -159,5 +160,7 @@ body{
   margin-left: 30%;
   border-radius: 3px;
   border: 1px solid #000000;
-  
+
+
 }
+
