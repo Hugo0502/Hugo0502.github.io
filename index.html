@@ -19,7 +19,7 @@
             <li><a href="#">sample 3</a></li>
           </ul>
         </li>
-        <a href="#">More about me</a>
+        <a href="#">Text</a>
       </ul>
     </div>
 
@@ -29,23 +29,48 @@
 <p id="p1">Hello world! <br>
   My Name is Hugo Wienhold! <br>
   I'm a student from Germany and this is my first Webside.
-
 </p>
 
-<p id="title" >Mein Instagram und Twitter Profil findest du hier:</p>
-<a href="https://www.instagram.com/hugo_wienhold/">
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">More about me</button>
+  <div id="myDropdown" class="dropdown-content">
+    <p id="bio">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,</p>
+  </div>
+</div>
+<script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+
+<p id="title" >You can find my Instagram and Twitter profile here:</p>
+<a href="https://www.instagram.com/hugo_wienhold/" target="_blank">
 <img title="Instagram-Profil" 
 src="https://www.yupanqui.de/wp-content/uploads/Yupanqui_Instagram_Stories_SocialMedia.png"
 id="one" alt="instagram-profil"/>
 </a>
 
-<a href="https://twitter.com/heyhockeee">
+<a href="https://twitter.com/heyhockeee" target="_blank">
   <img title="Twitter-Profil"
   src="https://blaublick.de/wordpress/wp-content/uploads/2014/05/twitter.png"
   id="two" alt="twitter-profil"/>
   </a>
-
-
 
 </body>
 </html>
