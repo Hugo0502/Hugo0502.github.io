@@ -20,16 +20,16 @@ p {
 
 }
 
-p.title{
+#title{
   display: block;
   widows: 400px;
-  margin: 50px auto;
-  font: 15px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
- background-color: lightblue ;
-    border-left:0px;
-    border-right: 0px;
-    border-bottom:0px;
-    border-radius: 0px;
+  margin-left: 50px auto;
+  font: 16px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  background-color: lightblue;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-radius: 0%;
 }
 
 
@@ -38,50 +38,68 @@ body{
 }
 
 #one{
-  display: block;
-  width:150px;
-  margin: 50px auto;
+  display: inline-block ;
+  width: 15%;
+  margin-left: 33%;
+  padding: -10px;
+  padding-bottom: 25px;
+  
+}
+
+#two{
+  display: inline-block ;
+  width: 15%;
+  padding-left: 50px;
+  padding-bottom: 25px;
 
 }
 
-ul{
-  margin-left: 150px;
-  margin-top: 10px;
+
+#topmenu{
+  margin-top: 15px;
   font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-
 }
 
-ul li{
+
+#topmenu.li{
   display: inline;
  
   
 
 }
 div {background-color: rgb(22, 84, 126);}
+
 div a {
   text-decoration: none;
   color: white;
-  font-size: 20px;
-  padding: 5px;
+  font-size: 25px;
+  padding: 25px;
   display:inline-block;
 }
-ul {
+
+div a:hover{
+  background-color: #124669
+}
+
+#topmenu {
   display: inline;
   margin: 0;
   padding: 0;
 }
-ul li {display: inline-block;}
-ul li:hover {background: rgb(22, 84, 126);}
-ul li:hover ul {display: block;}
-ul li ul {
+#topmenu li {display: inline-block;}
+#topmenu li:hover {background: #124669;}
+#topmenu li:hover ul {display: block;}
+#topmenu li ul {
   position: absolute;
-  width: 200px;
+  width: 245px;
   display: none;
 }
-ul li ul li { 
-  background: rgb(22, 84, 126); 
+#submenu li { 
+  background: #124669; 
   display: block; 
 }
-ul li ul li a {display:block !important;} 
-ul li ul li:hover {background: rgb(22, 84, 126);}
+#submenu li a {display:block !important;} 
+#submenu li:hover {background: rgb(22, 84, 126);}
+
+
 
